@@ -1,0 +1,21 @@
+html_content = f"""
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .card {{ border: 2px solid #333; width: 300px; padding: 20px; font-family: sans-serif; }}
+    .header {{ font-weight: bold; font-size: 20px; color: #004a99; }}
+    .field {{ margin: 10px 0; }}
+</style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">STUDENT ID CARD</div>
+        <div class="field"><strong>Name:</strong> {info['name']}</div>
+        <div class="field"><strong>Father:</strong> {info['father']}</div>
+        <div class="field"><strong>Class:</strong> {info['class']}</div>
+        <div class="field"><strong>Roll:</strong> {info['roll']}</div>
+    </div>
+</body>
+</html>
+"""
