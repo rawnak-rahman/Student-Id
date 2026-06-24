@@ -8,15 +8,20 @@ if is_eligible:
 else: 
     print("You are not eligible for an ID Card")
 
-Infos=[]
-print("Enter your information as the following Name,Fathers Name,Mothers Name,Class,Class Roll,Blood Group,Mob Num(Press on an Empty line to finish): ")
+name=input("Enter Name here: ")
+father=input("Enter Fathers Name here: ")
+mother=input("Enter Mothers Name here: ")
+cls=input("Enter Class here: ")
+roll=input("Enter Class Roll here: ")
+bld_grp=input("Enter BLood Group here: ")
+Mobile_nm=input("Enter Mobile Number here: ")
 
-while True:
-    Info=str(input())
+print(f"Name          :{name}")
+print(f"Father's Name :{father}")
+print(f"Mother's Name :{mother}")
+print(f"Class         :{cls}")
+print(f"Class ROll    :{roll}")
+print(f"BLood Group   :{bld_grp}")
+print(f"Mobile Number :{Mobile_nm}")
 
-    if Info=="":
-        break
-    Infos.append(Info)
 
-result="\n".join(Infos)
-print(result)    
